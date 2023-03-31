@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsop00vx5y5hq"]
+
+[ext_resource type="Texture2D" uid="uid://dufkdcl4t7bkt" path="res://asset/board.png" id="1_une5f"]
+[ext_resource type="Script" path="res://button_press.gd" id="2_76u6x"]
+
+[node name="TextureRect" type="TextureRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 120.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_une5f")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_76u6x")
